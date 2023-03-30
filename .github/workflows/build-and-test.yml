@@ -16,6 +16,9 @@ jobs:
       - name: Build
         working-directory: ./completesolution
         run: npm run build --if-present
+      - name: Run server
+        working-directory: ./completesolution
+        run: npm run start
       - name: Test
         working-directory: ./completesolution
-        run: npm run start && npm run test
+        run: npm run test
