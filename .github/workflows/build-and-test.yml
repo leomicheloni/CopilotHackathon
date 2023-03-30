@@ -11,8 +11,11 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
+        working-directory: ./completesolution
         run: npm install
       - name: Build
+        working-directory: ./completesolution
         run: npm run build --if-present
       - name: Test
+        working-directory: ./completesolution
         run: npm test
