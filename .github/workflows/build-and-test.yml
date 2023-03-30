@@ -18,4 +18,4 @@ jobs:
         run: npm run build --if-present
       - name: Test
         working-directory: ./completesolution
-        run: npm test
+        run: npm run start && npm run test
